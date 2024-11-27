@@ -70,7 +70,7 @@ wxBitmap wxScreenDCImpl::DoGetAsBitmap(const wxRect *subrect) const
 
     CGImageRef image = NULL;
     
-    image = CGDisplayCreateImage(kCGDirectMainDisplay);
+    //image = CGDisplayCreateImage(kCGDirectMainDisplay);
 
     wxASSERT_MSG(image, wxT("wxScreenDC::GetAsBitmap - unable to get screenshot."));
 
